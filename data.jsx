@@ -6,7 +6,7 @@
       name: "Gebiet",
       modifiers: [
         {
-          name: "perfekt geeignetes Jagdgebiet",
+          name: "perfekts Jagdgebiet",
           bonus: 3
         },
         {
@@ -174,30 +174,78 @@
   art: [
     {
       name: "Angeln",
-      jagdtalent: "Verbergen (sich Verstecken)",
-      tierkunde: "Fischen & Angeln (Salzwassertiere oder Süßwassertiere)",
-      grundzeitraum: "10 Stunden",
+      jagdtalent: {
+        talent: "Verbergen",
+        anwendungsgebiet: "(Sich Verstecken)",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      tierkunde: {
+        talent: "Fischen & Angeln",
+        anwendungsgebiet: "Salzwassertiere oder Süßwassertiere",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      grundzeitraum: {
+        start: 10,
+        unit: "Stunden",
+        modifier: 1
+      },
       schuss: false
     },
     {
       name: "Ansitz",
-      jagdtalent: "Verbergen (sich Verstecken)",
-      tierkunde: "Tierkunde (Wildtiere)",
-      grundzeitraum: "10 Stunden * 1.25",
+      jagdtalent: {
+        talent: "Verbergen",
+        anwendungsgebiet: "Sich Verstecken",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      tierkunde: {
+        talent: "Tierkunde",
+        anwendungsgebiet: "Wildtiere",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      grundzeitraum: {
+        start: 10,
+        unit: "Stunden",
+        modifier: 1.25
+      },
       schuss: true
     },
     {
       name: "Fallenjagd",
-      jagdtalent: "Fährtensuchen (tierische Spuren)",
-      tierkunde: "Tierkunde (Wildtiere)",
-      grundzeitraum: "24 Stunden",
+      jagdtalent: {
+        talent: "Fährtensuchen",
+        anwendungsgebiet: "Tierische Spuren",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      tierkunde: {
+        talent: "Tierkunde",
+        anwendungsgebiet: "Wildtiere",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      grundzeitraum: {
+        start: 24,
+        unit: "Stunden",
+        modifier: 1
+      },
       schuss: false
     },
     {
       name: "Pirsch",
-      jagdtalent: "Fährtensuchen (tierische Spuren)",
-      tierkunde: "Tierkunde (Wildtiere)",
-      grundzeitraum: "10 Stunden",
+      jagdtalent: {
+        talent: "Fährtensuchen",
+        anwendungsgebiet: "Tierische Spuren",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      tierkunde: {
+        talent: "Tierkunde",
+        anwendungsgebiet: "Wildtiere",
+        eigenschaften: ["TODO","TODO","TODO"]
+      },
+      grundzeitraum: {
+        start: 10,
+        unit: "Stunden",
+        modifier: 1
+      },
       schuss: true
     }
   ]
