@@ -177,12 +177,12 @@
       jagdtalent: {
         talent: "Verbergen",
         anwendungsgebiet: "(Sich Verstecken)",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","IN","GE"]
       },
       tierkunde: {
         talent: "Fischen & Angeln",
         anwendungsgebiet: "Salzwassertiere oder Süßwassertiere",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["FF","GE","KO"]
       },
       grundzeitraum: {
         start: 10,
@@ -196,12 +196,12 @@
       jagdtalent: {
         talent: "Verbergen",
         anwendungsgebiet: "Sich Verstecken",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","IN","GE"]
       },
       tierkunde: {
         talent: "Tierkunde",
         anwendungsgebiet: "Wildtiere",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","MU","CH"]
       },
       grundzeitraum: {
         start: 10,
@@ -215,12 +215,12 @@
       jagdtalent: {
         talent: "Fährtensuchen",
         anwendungsgebiet: "Tierische Spuren",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","IN","GE"]
       },
       tierkunde: {
         talent: "Tierkunde",
         anwendungsgebiet: "Wildtiere",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","MU","CH"]
       },
       grundzeitraum: {
         start: 24,
@@ -234,12 +234,12 @@
       jagdtalent: {
         talent: "Fährtensuchen",
         anwendungsgebiet: "Tierische Spuren",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","IN","GE"]
       },
       tierkunde: {
         talent: "Tierkunde",
         anwendungsgebiet: "Wildtiere",
-        eigenschaften: ["TODO","TODO","TODO"]
+        eigenschaften: ["MU","MU","CH"]
       },
       grundzeitraum: {
         start: 10,
