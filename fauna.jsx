@@ -1,6 +1,6 @@
-{
+export const fauna = {
   "Albernische Wälder (gem. Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Auerhühner",
       "Fasane",
       "Kronenhirsche",
@@ -13,7 +13,7 @@
       "Ratten",
       "Habichte"
     ],
-    "HÄUFIG": [
+    "1": [
       "Rotpüschel",
       "Kaiserhörnchen",
       "Rebhühner",
@@ -21,17 +21,17 @@
       "Gänseluchse",
       "Waldwölfe"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Riesenlöffler",
       "Wildschweine"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Vampierfledermäuse",
       "NAchtwinde",
       "Waldspinnen",
       "Tatzelwürmer"
     ],
-    "SELTEN": [
+    "3": [
       "Silberböcke",
       "Auerochsen",
       "Baumbären",
@@ -48,8 +48,8 @@
       "Wühler",
       "Große Schröter"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Pfeifhasen",
       "Höhlenbären",
@@ -69,7 +69,7 @@
     ]
   },
   "Almadanische Wälder (yaquirisches Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Rebhühner",
       "Regenbogenfasane",
       "Fledermäuse",
@@ -84,22 +84,22 @@
       "Waldwölfe",
       "Süßmäuler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Wildschweine",
       "Rotpüschel",
       "Rehe",
       "Rotfüchse"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Riesenlöffler"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Nachtwinde",
       "Nesselvipern",
       "Saguraspinnen",
       "Vogelspinnen"
     ],
-    "SELTEN": [
+    "3": [
       "Raschtulsluchse",
       "Baumbären",
       "Biber",
@@ -112,8 +112,8 @@
       "Gaukelweihen",
       "Wühler"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Höhlenpanther",
       "Gruftasseln",
@@ -126,16 +126,16 @@
     ]
   },
   "Andere Mittelländische Gebirge": {
-    "GELEGENTLICH": [],
-    "HÄUFIG": [
+    "2": [],
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Wühlschrate",
       "Rotluchse"
     ],
-    "SELTEN": [
+    "3": [
       "Sturmfalken",
       "Blaufalken",
       "Berglöwen",
@@ -143,8 +143,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Bergadler",
       "Sonnenluchse",
       "Fledermäuse",
@@ -156,21 +156,21 @@
     ]
   },
   "Ehernes Schwert": {
-    "GELEGENTLICH": [
+    "2": [
       "Bergadler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Riesenalken",
       "Rote Warane",
       "Riesenlindwürmer",
       "Rotluchse",
       "Höhlendrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Blaufalken",
       "Sturmfalken",
@@ -179,8 +179,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Höhlenbären",
       "Schneelaurer",
       "Wühlschrate",
@@ -195,7 +195,7 @@
     ]
   },
   "Havener Marschen": {
-    "GELEGENTLICH": [
+    "2": [
       "Biber",
       "Sumpfrantzen",
       "Fledermäuse",
@@ -204,26 +204,26 @@
       "Riesenspringegel",
       "Sumpfegel"
     ],
-    "HÄUFIG": [
+    "1": [
       "Sumpfratten",
       "Sumpfechsen"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Moskitos"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Grubenwürmer",
       "Zwergkrakenmolche"
     ],
-    "SELTEN": [
+    "3": [
       "Mofus",
       "Borbarad-Moskitos"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": []
+    "VORKOMMEN": "3",
+    "5": []
   },
   "Immergrüne Wälder (Südosten)": {
-    "GELEGENTLICH": [
+    "2": [
       "Ongalobullen",
       "Warzenschweine",
       "Rebhühner",
@@ -236,19 +236,19 @@
       "Bussarde",
       "Grimwölfe"
     ],
-    "HÄUFIG": [
+    "1": [
       "Rehe",
       "Riesenlöffler",
       "Rotpüschel"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Moosaffen",
       "Vampirfledermäuse",
       "Nachtwinde",
       "Schleiereulen"
     ],
-    "SELTEN": [
+    "3": [
       "Kaiserhörnchen",
       "Streifenmäuse",
       "Baumbären",
@@ -258,8 +258,8 @@
       "Maraskantaranteln",
       "Vogelspinnen"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Wladschrate",
       "Riesenaffen",
       "Wiesel",
@@ -276,16 +276,16 @@
     ]
   },
   "Koschberge": {
-    "GELEGENTLICH": [],
-    "HÄUFIG": [
+    "2": [],
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Wühlschrate",
       "Rotluchse"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Sturmfalken",
       "Blaufalken",
@@ -294,8 +294,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Bergadler",
       "Sonnenluchse",
       "Fledermäuse",
@@ -307,7 +307,7 @@
     ]
   },
   "Liebfeldische Wälder (yaquirisches Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Rebhühner",
       "Regenbogenfasane",
       "Fledermäuse",
@@ -322,22 +322,22 @@
       "Waldwölfe",
       "Süßmäuler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Wildschweine",
       "Rotpüschel",
       "Rehe",
       "Rotfüchse"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Riesenlöffler"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Nachtwinde",
       "Nesselvipern",
       "Saguraspinnen",
       "Vogelspinnen"
     ],
-    "SELTEN": [
+    "3": [
       "Baumbären",
       "Biber",
       "Kaiserhörnchen",
@@ -349,8 +349,8 @@
       "Gaukelweihen",
       "Wühler"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Höhlenpanther",
       "Gruftasseln",
@@ -363,7 +363,7 @@
     ]
   },
   "Maraskan": {
-    "GELEGENTLICH": [
+    "2": [
       "Wildschweine",
       "Kaiserhörnchen,Stinkfrettchen",
       "Mungos",
@@ -371,12 +371,12 @@
       "Bussarde",
       "Maraskantaranteln"
     ],
-    "HÄUFIG": [
+    "1": [
       "Riesenlöffler",
       "Fledermäuse"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Riesenaffen",
       "Harnischträger",
       "Wollnashörner",
@@ -385,7 +385,7 @@
       "Noralec-Ottern",
       "Rote Parder"
     ],
-    "SELTEN": [
+    "3": [
       "Blaufalken",
       "Baumschleimer",
       "Schleiereulen",
@@ -394,8 +394,8 @@
       "Parder",
       "Speispinnen"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Rehe",
       "Rotpüschel",
       "Moskitos",
@@ -404,7 +404,7 @@
     ]
   },
   "Mengbillanische Wälder (yaquirisches Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Rebhühner",
       "Regenbogenfasane",
       "Fledermäuse",
@@ -419,22 +419,22 @@
       "Waldwölfe",
       "Süßmäuler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Wildschweine",
       "Rotpüschel",
       "Rehe",
       "Rotfüchse"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Riesenlöffler"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Nachtwinde",
       "Nesselvipern",
       "Saguraspinnen",
       "Vogelspinnen"
     ],
-    "SELTEN": [
+    "3": [
       "Baumbären",
       "Biber",
       "Kaiserhörnchen",
@@ -446,8 +446,8 @@
       "Gaukelweihen",
       "Wühler"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Höhlenpanther",
       "Gruftasseln",
@@ -460,7 +460,7 @@
     ]
   },
   "Mitelländische Wälder (tobrisches Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Wildschweine",
       "Rebhühner",
       "Fasane",
@@ -471,18 +471,18 @@
       "Bussarde",
       "Grimwölfe"
     ],
-    "HÄUFIG": [
+    "1": [
       "Rehe",
       "Riesenlöffler",
       "Rotpüschel"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Vampirfledermäuse",
       "Nachtwinde",
       "Schleiereulen"
     ],
-    "SELTEN": [
+    "3": [
       "Auerochsen",
       "Kaiserhörnchen",
       "Streifenmäuse",
@@ -490,8 +490,8 @@
       "Wolfsratten",
       "Waldwölfe"
     ],
-    "VORKOMMEN": "GELEGENTLICH",
-    "WEITERE": [
+    "VORKOMMEN": "2",
+    "5": [
       "Waldschrate",
       "Riesenaffen",
       "Wiesel",
@@ -508,18 +508,18 @@
     ]
   },
   "Mittelaventurische Kalkgebirge": {
-    "GELEGENTLICH": [
+    "2": [
       "Bergadler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Rotluchse",
       "Höhlendrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Blaufalken",
       "Sturmfalken",
@@ -528,8 +528,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Wühlschrate",
       "Sonnenluchse",
       "Fledermäuse",
@@ -542,7 +542,7 @@
     ]
   },
   "Mittelländische Grasländer (Heide und Steppe)": {
-    "GELEGENTLICH": [
+    "2": [
       "Enten",
       "Fasane",
       "Gelbfüchse",
@@ -551,23 +551,23 @@
       "Habichte",
       "Nesselvipern"
     ],
-    "HÄUFIG": [
+    "1": [
       "Wiesel",
       "Streifenmäuse",
       "Gänseluchse",
       "Trappen"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Pfeifhasen",
       "Rotpüschel"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Warzennashörner",
       "Steppentiger",
       "Gabelschwänze",
       "Grimwölfe"
     ],
-    "SELTEN": [
+    "3": [
       "Gabelantilopen",
       "Bergadler",
       "Blaufalken",
@@ -576,8 +576,8 @@
       "WIldkatzen",
       "Wühler"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Rebhühner",
       "Fledermäuse",
       "Sonnenluchse",
@@ -588,7 +588,7 @@
     ]
   },
   "Mittelländische Wälder (gem. Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Auerhühner",
       "Fasane",
       "Kronenhirsche",
@@ -601,7 +601,7 @@
       "Ratten",
       "Habichte"
     ],
-    "HÄUFIG": [
+    "1": [
       "Rotpüschel",
       "Kaiserhörnchen",
       "Rebhühner",
@@ -609,17 +609,17 @@
       "Gänseluchse",
       "Waldwölfe"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Riesenlöffler",
       "Wildschweine"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Vampierfledermäuse",
       "NAchtwinde",
       "Waldspinnen",
       "Tatzelwürmer"
     ],
-    "SELTEN": [
+    "3": [
       "Silberböcke",
       "Auerochsen",
       "Baumbären",
@@ -636,8 +636,8 @@
       "Wühler",
       "Große Schröter"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Pfeifhasen",
       "Höhlenbären",
@@ -657,7 +657,7 @@
     ]
   },
   "Mittelländische Wälder (yaquirisches Klima)": {
-    "GELEGENTLICH": [
+    "2": [
       "Rebhühner",
       "Regenbogenfasane",
       "Fledermäuse",
@@ -672,22 +672,22 @@
       "Waldwölfe",
       "Süßmäuler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Wildschweine",
       "Rotpüschel",
       "Rehe",
       "Rotfüchse"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Riesenlöffler"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Nachtwinde",
       "Nesselvipern",
       "Saguraspinnen",
       "Vogelspinnen"
     ],
-    "SELTEN": [
+    "3": [
       "Baumbären",
       "Biber",
       "Kaiserhörnchen",
@@ -699,8 +699,8 @@
       "Gaukelweihen",
       "Wühler"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Höhlenpanther",
       "Gruftasseln",
@@ -713,7 +713,7 @@
     ]
   },
   "Nördliche Grasländer und Steppen": {
-    "GELEGENTLICH": [
+    "2": [
       "Elche",
       "Steppenrinder",
       "Stinkmarder",
@@ -723,23 +723,23 @@
       "Trappen",
       "Klippechsen"
     ],
-    "HÄUFIG": [
+    "1": [
       "Pfeifhasen",
       "Gelbfüchse",
       "Ratten",
       "Silberwölfe"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Karene",
       "Karnickel",
       "Steppenhunde"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Sturmfalken",
       "Feuermolche",
       "Horndrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Halmar-Antilopen",
       "Mammuts",
       "Blaufalken",
@@ -751,8 +751,8 @@
       "Wolfsratten",
       "Scheinbasilisken"
     ],
-    "VORKOMMEN": "GELEGENTLICH",
-    "WEITERE": [
+    "VORKOMMEN": "2",
+    "5": [
       "Firunshirsche",
       "Rotpüschel",
       "Orklandhörnchen",
@@ -774,18 +774,18 @@
     ]
   },
   "Nördliche Kalkgebirge": {
-    "GELEGENTLICH": [
+    "2": [
       "Bergadler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Rotluchse",
       "Höhlendrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Blaufalken",
       "Sturmfalken",
@@ -794,8 +794,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Höhlenbären",
       "Schneelaurer",
       "Wühlschrate",
@@ -810,7 +810,7 @@
     ]
   },
   "Nördliche Sümpfe (Marschen und Moore)": {
-    "GELEGENTLICH": [
+    "2": [
       "Biber",
       "Sumpfrantzen",
       "Fledermäuse",
@@ -819,51 +819,51 @@
       "Riesenspringegel",
       "Sumpfegel"
     ],
-    "HÄUFIG": [
+    "1": [
       "Sumpfratten",
       "Sumpfechsen"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Moskitos"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Grubenwürmer",
       "Zwergkrakenmolche"
     ],
-    "SELTEN": [
+    "3": [
       "Mofus",
       "Borbarad-Moskitos"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": []
+    "VORKOMMEN": "3",
+    "5": []
   },
   "Nördliche Tundra": {
-    "GELEGENTLICH": [
+    "2": [
       "Firnyaks",
       "Karene",
       "Schneedachse",
       "Firnluchse"
     ],
-    "HÄUFIG": [
+    "1": [
       "Elche",
       "Ratten",
       "Wolfsratten",
       "Rauhwölfe"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Frostwürmer",
       "Gletscherwürmer"
     ],
-    "SELTEN": [
+    "3": [
       "Firunsbären",
       "Mammuts",
       "Mastodonten",
       "Blaufüchse",
       "Schneelaurer"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Karene",
       "Frostwürmer",
       "Pfeifhasen",
@@ -874,7 +874,7 @@
     ]
   },
   "Nördliche Wälder (Bornland)": {
-    "GELEGENTLICH": [
+    "2": [
       "Elche",
       "Rehe",
       "Sumpfrantzen",
@@ -886,27 +886,27 @@
       "Vampirfledermäuse",
       "Waldspinnen"
     ],
-    "HÄUFIG": [
+    "1": [
       "Biber",
       "Fledermäuse",
       "Wolfsratten",
       "Rauhwölfe",
       "Waldwölfe"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "SIlberböcke",
       "Wildschweine",
       "Pfeifhasen",
       "Wiesel"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Schwarzbären",
       "Vielfraße",
       "Schneedachse",
       "Waldlöwen",
       "Wildkatzen"
     ],
-    "SELTEN": [
+    "3": [
       "Firunshirsche",
       "Auerochsen",
       "Bussarde",
@@ -917,8 +917,8 @@
       "Rotluchse",
       "Große Schröter"
     ],
-    "VORKOMMEN": "SEHR HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "0",
+    "5": [
       "Waldschrate",
       "Kronenhirsche",
       "Rebhühner",
@@ -934,7 +934,7 @@
     ]
   },
   "Nördliche Wälder (Taiga)": {
-    "GELEGENTLICH": [
+    "2": [
       "Rebhühner",
       "Fledermäuse",
       "Stinkmarder",
@@ -948,24 +948,24 @@
       "Rauhwölfe",
       "Waldspinnen"
     ],
-    "HÄUFIG": [
+    "1": [
       "Kaiserhörnchen",
       "Pfeifhasen",
       "Wiesel",
       "Waldwölfe"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Karnickel",
       "Wildschweine"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Auerochsen",
       "Borkenbären",
       "Rotfüchse",
       "Nachtwinde",
       "Silberlöwen"
     ],
-    "SELTEN": [
+    "3": [
       "Firunshirsche",
       "Kronenhirsche",
       "Biber",
@@ -976,8 +976,8 @@
       "Sonnenluchse",
       "Vampirfledermäuse"
     ],
-    "VORKOMMEN": "SEHR HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "0",
+    "5": [
       "Waldschrate",
       "Elche",
       "Fasane",
@@ -1001,7 +1001,7 @@
     ]
   },
   "Nördliche Wälder (Westküste)": {
-    "GELEGENTLICH": [
+    "2": [
       "Kronenhirsche",
       "Rotpüschel",
       "Kaiserhörnchen",
@@ -1014,18 +1014,18 @@
       "Waldspinnen",
       "Große Schröter"
     ],
-    "HÄUFIG": [
+    "1": [
       "Rehe",
       "Streifendachse",
       "Wiesel",
       "Wolfsratten",
       "Waldwölfe"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Karnickel",
       "Wildschweine"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Höhlenbären",
       "Sturmfalken",
       "Schädeleulen",
@@ -1034,7 +1034,7 @@
       "Smaragdspinnen",
       "Baumdrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Wühler",
       "Auerochsen",
       "Baumbären",
@@ -1044,8 +1044,8 @@
       "Waldlöwen",
       "Wildkatzen"
     ],
-    "VORKOMMEN": "HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "1",
+    "5": [
       "Waldschrate",
       "Pfeifhasen",
       "Fasane",
@@ -1070,7 +1070,7 @@
     ]
   },
   "Nördliches Hochland": {
-    "GELEGENTLICH": [
+    "2": [
       "Rotpüschel",
       "Stinkmarder",
       "Wiesel",
@@ -1078,15 +1078,15 @@
       "Fledermäuse",
       "Klippechsen"
     ],
-    "HÄUFIG": [
+    "1": [
       "Orklandhörnchen",
       "Gelbfüchse",
       "Ratten"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Orklandkarnickel"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Königsadler",
       "Borkenbären",
       "Sturmfalken",
@@ -1094,7 +1094,7 @@
       "Steppentiger",
       "Feuermolche"
     ],
-    "SELTEN": [
+    "3": [
       "Todeshörnchen",
       "Wühler",
       "Trappen",
@@ -1107,8 +1107,8 @@
       "Rauhwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "GELEGENTLICH",
-    "WEITERE": [
+    "VORKOMMEN": "2",
+    "5": [
       "Halmar-Antilopen",
       "Blaufalken",
       "Mammuts",
@@ -1125,7 +1125,7 @@
     ]
   },
   "Regenwald": {
-    "GELEGENTLICH": [
+    "2": [
       "Purzelaffen",
       "Löwenaffen",
       "Wolfsratten",
@@ -1138,14 +1138,14 @@
       "Panzerechsen",
       "Würgeschlangen"
     ],
-    "HÄUFIG": [
+    "1": [
       "Kleinaffen",
       "Fledermäuse",
       "Sumpfratten",
       "Alligatoren"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Riesenaffen",
       "Brabaker Waldelefanten",
       "Dschungeltiger",
@@ -1155,7 +1155,7 @@
       "Basilisken-Panzerkröten",
       "Borbarad-Mosiktos"
     ],
-    "SELTEN": [
+    "3": [
       "Vampirfledermäuse",
       "Ratten",
       "Fleckenpanther",
@@ -1168,8 +1168,8 @@
       "Springchamäleons",
       "Klammermoloche"
     ],
-    "VORKOMMEN": "SEHR HÄUFIG",
-    "WEITERE": [
+    "VORKOMMEN": "0",
+    "5": [
       "Nachtwinde",
       "Höhlenspinnen",
       "Riesenamöben",
@@ -1177,17 +1177,17 @@
     ]
   },
   "Rote Sichel": {
-    "GELEGENTLICH": [],
-    "HÄUFIG": [
+    "2": [],
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Wühlschrate",
       "Rotluchse",
       "Höhlenbären"
     ],
-    "SELTEN": [
+    "3": [
       "Sturmfalken",
       "Blaufalken",
       "Berglöwen",
@@ -1195,8 +1195,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Bergadler",
       "Sonnenluchse",
       "Fledermäuse",
@@ -1208,17 +1208,17 @@
     ]
   },
   "Salamandersteine": {
-    "GELEGENTLICH": [],
-    "HÄUFIG": [
+    "2": [],
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Wühlschrate",
       "Rotluchse",
       "Höhlenbären"
     ],
-    "SELTEN": [
+    "3": [
       "Sturmfalken",
       "Blaufalken",
       "Berglöwen",
@@ -1226,8 +1226,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Riesenlindwürmer",
       "Bergadler",
       "Sonnenluchse",
@@ -1240,17 +1240,17 @@
     ]
   },
   "Schwarze und Gelbe Sichel": {
-    "GELEGENTLICH": [],
-    "HÄUFIG": [
+    "2": [],
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Wühlschrate",
       "Rotluchse",
       "Höhlenbären"
     ],
-    "SELTEN": [
+    "3": [
       "Sturmfalken",
       "Blaufalken",
       "Berglöwen",
@@ -1258,8 +1258,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Bergadler",
       "Sonnenluchse",
       "Fledermäuse",
@@ -1271,15 +1271,15 @@
     ]
   },
   "Südliche Regengebirge": {
-    "GELEGENTLICH": [
+    "2": [
       "Wolfsratten",
       "Gaukelweihen",
       "Höhlenspinnen",
       "Panzerechsen"
     ],
-    "HÄUFIG": [],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "1": [],
+    "0": [],
+    "4": [
       "Würgeschlangen",
       "Mysobvipern",
       "Baumspinnen",
@@ -1287,7 +1287,7 @@
       "Basilisken-Panzerkröten",
       "Riesenlindwürmer"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Kleinaffen",
       "Fledermäuse",
@@ -1300,8 +1300,8 @@
       "Gürtelechsen",
       "Harpyien"
     ],
-    "VORKOMMEN": "GELEGENTLICH",
-    "WEITERE": [
+    "VORKOMMEN": "2",
+    "5": [
       "Riesenaffen",
       "Dschungeltiger",
       "Pei-Pei-Asseln",
@@ -1309,27 +1309,27 @@
     ]
   },
   "Südliche Sümpfe": {
-    "GELEGENTLICH": [
+    "2": [
       "Fledermäuse",
       "Mysobvipern",
       "Panzerechsen",
       "Fischechsen",
       "Borbarad-Moskitos"
     ],
-    "HÄUFIG": [
+    "1": [
       "Sumpfratten",
       "Sumpfegel",
       "Sumpfechsen"
     ],
-    "SEHR HÄUFIG": [
+    "0": [
       "Moskitos"
     ],
-    "SEHR SELTEN": [
+    "4": [
       "Sumpfrantzen",
       "Flugechsen",
       "Sumpfkrakenmolche"
     ],
-    "SELTEN": [
+    "3": [
       "Vampirfledermäuse",
       "Boronsottern",
       "Morfus",
@@ -1338,30 +1338,30 @@
       "Hornechsen",
       "Grubenwürmer"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Palmvipern",
       "Schlinger"
     ]
   },
   "Südländische Gebirge": {
-    "GELEGENTLICH": [
+    "2": [
       "Wolfsratten",
       "Khomgeier",
       "Klapperschlangen",
       "Sandwölfe",
       "Gelbschwanzskorpione"
     ],
-    "HÄUFIG": [
+    "1": [
       "Ratten",
       "Raschtulsluchse",
       "Khoramsbestien"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Harpyien"
     ],
-    "SELTEN": [
+    "3": [
       "Wühler",
       "Königsadler",
       "Bergadler",
@@ -1371,8 +1371,8 @@
       "Boronsottern",
       "Speikobras"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Wühlschrate",
       "Gabelweihen",
       "Vogelspinnen",
@@ -1380,7 +1380,7 @@
     ]
   },
   "Südländische Grasländer und Steppen": {
-    "GELEGENTLICH": [
+    "2": [
       "Ongalobullen",
       "Gabelantilopen",
       "Warzenschweine",
@@ -1392,9 +1392,9 @@
       "Strauße",
       "Sandwölfe"
     ],
-    "HÄUFIG": [],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "1": [],
+    "0": [],
+    "4": [
       "Königsadler",
       "Seeadler",
       "Speikobras",
@@ -1403,7 +1403,7 @@
       "Feuerskorpione",
       "Wüstenskorpione"
     ],
-    "SELTEN": [
+    "3": [
       "Rotpüschel",
       "Kaiserhörnchen",
       "Regenbogenfasane",
@@ -1421,8 +1421,8 @@
       "Gelbschwanzskorpione",
       "Wildpferde"
     ],
-    "VORKOMMEN": "GELEGENTLICH",
-    "WEITERE": [
+    "VORKOMMEN": "2",
+    "5": [
       "Fasane",
       "Wiesel",
       "Rehe",
@@ -1430,20 +1430,20 @@
     ]
   },
   "Walberge": {
-    "GELEGENTLICH": [
+    "2": [
       "Walbergwidder",
       "Bergadler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Rote Warane",
       "Rotluchse",
       "Höhlendrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Blaufalken",
       "Sturmfalken",
@@ -1452,8 +1452,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Höhlenbären",
       "Schneelaurer",
       "Wühlschrate",
@@ -1468,18 +1468,18 @@
     ]
   },
   "Windhagberge und Finsterkamm": {
-    "GELEGENTLICH": [
+    "2": [
       "Bergadler"
     ],
-    "HÄUFIG": [
+    "1": [
       "Gebirgsböcke"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Rotluchse",
       "Höhlendrachen"
     ],
-    "SELTEN": [
+    "3": [
       "Königsadler",
       "Blaufalken",
       "Sturmfalken",
@@ -1488,8 +1488,8 @@
       "Grimwölfe",
       "Harpyien"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Wühlschrate",
       "Sonnenluchse",
       "Fledermäuse",
@@ -1502,31 +1502,31 @@
     ]
   },
   "Wüste": {
-    "GELEGENTLICH": [
+    "2": [
       "Klapperschlangen",
       "Feuerskorpione",
       "Gelbschwanzskorpione",
       "Wüstenskorpione"
     ],
-    "HÄUFIG": [],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "1": [],
+    "0": [],
+    "4": [
       "Wolfsratten",
       "Riesenameisen"
     ],
-    "SELTEN": [
+    "3": [
       "Khomgeier",
       "Sandlöwen",
       "Khoramsbestien"
     ],
-    "VORKOMMEN": "SEHR SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "4",
+    "5": [
       "Schwarzgeier",
       "Sandwölfe"
     ]
   },
   "Wüstenrandgebiete": {
-    "GELEGENTLICH": [
+    "2": [
       "Ratten",
       "Schwarzgeier",
       "Speikobras",
@@ -1534,17 +1534,17 @@
       "Sandwölfe",
       "Wüstenskorpione"
     ],
-    "HÄUFIG": [
+    "1": [
       "Khomgeier",
       "Khoramsbestien"
     ],
-    "SEHR HÄUFIG": [],
-    "SEHR SELTEN": [
+    "0": [],
+    "4": [
       "Stinktiere",
       "Raschtulsluchse",
       "Maraskantaranteln"
     ],
-    "SELTEN": [
+    "3": [
       "Gabelantilopen",
       "Warzennashörner",
       "Sandlöwen",
@@ -1554,8 +1554,8 @@
       "Gelbschwanzskorpione",
       "Vogelspinnen"
     ],
-    "VORKOMMEN": "SELTEN",
-    "WEITERE": [
+    "VORKOMMEN": "3",
+    "5": [
       "Rotpüschel",
       "Sturmfalken",
       "Blaufalken",
@@ -1565,4 +1565,4 @@
       "Riesenlindwürmer"
     ]
   }
-}
+};
