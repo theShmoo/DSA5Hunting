@@ -1,23 +1,39 @@
-import React, { Component } from 'react';
-import {Col, Row, PageHeader} from 'react-bootstrap';
-import DSAFauna from './DSAFauna.jsx';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 
-export default class DSAFaunaGrid extends Component {
+import DSAFauna from './DSAFauna.jsx';
+import { DSAGrid, DSAGridItem} from '../controls/DSAGrid';
+import DSAInfoBox from '../controls/DSAInfoBox';
+
+const styles = {
+  root: {
+    flexGrow: 1,
+  }
+};
+
+class DSAFaunaGrid extends React.Component {
+
   render()
   {
-    const fauna = this.props.fauna.map((f, i) => {
+    const { classes, fauna } = this.props;
+    const all = fauna.map((f, i) => {
       return (
-        <Col sx={6} sm={6} md={4} lg={3} key={i}>
+        <DSAGridItem sx={12} sm={6} md={4} lg={3} key={i}>
           <DSAFauna fauna={f} />
-        </Col>);
+        </DSAGridItem>);
     })
-    return (
-      <div>
-        <Row>
-          <PageHeader>Tiere</PageHeader>
-        </Row>
-        {fauna}
+    return (<div className={classes.root}>
+        <DSAInfoBox title="Tiere">
+          <DSAGrid>{all}</DSAGrid>
+        </DSAInfoBox>
       </div>
     );
   }
 }
+
+DSAFaunaGrid.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(DSAFaunaGrid);

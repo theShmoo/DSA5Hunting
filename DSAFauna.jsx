@@ -1,24 +1,42 @@
-import React, { Component } from 'react';
-import {Panel, ListGroup} from 'react-bootstrap';
-import DSAAreaProperty from './DSAAreaProperty'
+import React from 'react';
 
-export default class DSAFauna extends Component {
+import {Frequencies, AreaFrequencies} from "../data/DSAFaunaData";
+
+import DSAItemList from '../controls/DSAItemList';
+
+import {Modifier} from '../utils/DSATextElements';
+
+class DSAFauna extends React.Component {
+
+  getFrequency(area, frequency) {
+    // find the area frequency in the static data
+    const area_frequency = Frequencies[AreaFrequencies[area]];
+    const given_frequency = Frequencies[frequency];
+    const combined_frequency = area_frequency.bonus + given_frequency.bonus;
+
+    const found = Frequencies.find(f => f.bonus === combined_frequency);
+    const f = Modifier(combined_frequency);
+    const tt = found ? found.name + " (" + f + ")" : f;
+    return {
+        name: area,
+        value: f,
+        tooltip: tt,
+    };
+  }
+
+  getAreaItems(fauna) {
+    const {name, areas} = fauna;
+    const items = areas.map((g) => this.getFrequency(g.name, g.frequency));
+    return [{
+        title: name,
+        items: items
+      }];
+  }
 
   render() {
-    const {name, areas} = this.props.fauna;
-    return (
-      <Panel eventKey={name}>
-        <Panel.Heading>
-          <Panel.Title toggle>
-            {name}
-          </Panel.Title>
-        </Panel.Heading>
-        <Panel.Collapse>
-          <ListGroup>
-            <DSAAreaProperty title="Gebiete" areas={areas} />
-          </ListGroup>
-        </Panel.Collapse>
-      </Panel>
-    );
+    const {fauna} = this.props;
+    return <DSAItemList collapse={true} items={this.getAreaItems(fauna)} />
   }
 }
+
+export default DSAFauna;

@@ -1,38 +1,35 @@
-import React, { Component } from 'react';
-import { DropdownButton, MenuItem, ListGroupItem} from 'react-bootstrap';
-import {HuntingTypes} from "./DSAFaunaData";
+import React from 'react';
 
-export default class DSAHuntingTypeWidget extends Component {
+import { DSAGridItem} from '../controls/DSAGrid';
+import DSASelect from '../controls/DSASelect';
 
-  renderHuntingTypeChooser() {
-    const {onChange, huntingtype} = this.props;
-    const menuItems = HuntingTypes.map((h, i) => {
-      const active = h.name === huntingtype.name
-      return (
-          <MenuItem
-            key={i}
-            eventKey={i}
-            active={active}>
-            {h.name}
-          </MenuItem>
-        );
-    });
-    return (
-      <DropdownButton
-        title={huntingtype.name}
-        id="dd-dsa-hunting-type"
-        onSelect={e => onChange(HuntingTypes[e])}
-      >
-        {menuItems}
-      </DropdownButton>
-    );
+import {Talent} from "../utils/DSATextElements";
+
+import {HuntingTypes} from "../data/DSAFaunaData";
+
+function DSAHuntingTypeWidget(props) {
+
+  const options = HuntingTypes.map((h, i) => {return {
+    value: h.name,
+    label: h.name,
+  }});
+
+  const handleChange = (e, types) => {
+    const newType = types.find(t => t.name === e.value);
+    props.onChange(newType);
   }
 
-  render() {
-    return (
-      <ListGroupItem>
-        <strong>Wähle die Art der Jagd:</strong> {this.renderHuntingTypeChooser()}
-      </ListGroupItem>
-    );
-  }
+  const {name, jagdtalent} = props.huntingtype;
+  return (
+    <DSAGridItem xs={12} sm={12} md={6} lg={4}>
+      <DSASelect
+        options={options}
+        value={name}
+        label={Talent(jagdtalent)}
+        helperText={"Wähle die Art der Jagd"}
+        onChange={(e) => handleChange(e, HuntingTypes)} />
+    </DSAGridItem>
+  );
 }
+
+export default DSAHuntingTypeWidget;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Col, PageHeader} from 'react-bootstrap';
-import FilterWidget from './FilterWidget';
+
+import { DSAGrid, DSAGridItem} from '../controls/DSAGrid';
+import DSAInfoBox from '../controls/DSAInfoBox';
+import DSASelect from '../controls/DSASelect';
 
 export default class DSAFaunaFilters extends Component {
 
@@ -20,38 +22,39 @@ export default class DSAFaunaFilters extends Component {
     .sort();
   }
 
+  handleFilter = (values, property) => {
+    let filter = {};
+    filter[property] = values.map( x => x.value);
+    this.props.onChange(filter);
+  }
+
   render() {
-    const {fauna, onChange, selection} = this.props;
-    const names = fauna.map(f => f.name);
-    const areas = this.getAreas(fauna);
+    const {fauna, selection} = this.props;
+    const names = fauna.map(f => {return {label: f.name, value: f.name}});
+    const areas = this.getAreas(fauna).map(a => {return {label: a, value: a}});
     return (
-      <div>
-        <Row>
-          <PageHeader>Filter</PageHeader>
-        </Row>
-        <Row>
-          <Col xs={12} sm={6} md={6}>
-            <FilterWidget options={names}
-                title="Tier"
-                selected={selection.names}
-                property="names"
-                onUserInput={onChange} >
-                Suche nach einer oder mehreren speziellen Tierarten (z.B.: Wolfsratte). <br/>
-                Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
-              </FilterWidget>
-          </Col>
-          <Col xs={12} sm={6} md={6}>
-            <FilterWidget options={areas}
-              title="Gebiet"
-              selected={selection.areas}
-              property="areas"
-              onUserInput={onChange}>
-              Suche nach einer oder mehreren speziellen Regionen (z.B.: Regenwald). <br/>
-              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
-            </FilterWidget>
-          </Col>
-        </Row>
-      </div>
+      <DSAInfoBox title="Filter">
+        <DSAGrid>
+          <DSAGridItem xs={12} sm={12} md={6} lg={6}>
+            <DSASelect
+              multi={true}
+              options={names}
+              value={selection.names}
+              label="Tier"
+              helperText="Suche nach einer oder mehreren speziellen Tierarten (z.B.: Wolfsratte)."
+              onChange={(v) => this.handleFilter(v, "names")} />
+          </DSAGridItem>
+          <DSAGridItem xs={12} sm={12} md={6} lg={6}>
+            <DSASelect
+              multi={true}
+              options={areas}
+              label="Gebiet"
+              value={selection.areas}
+              helperText="Suche nach einer oder mehreren speziellen Regionen (z.B.: Regenwald)."
+              onChange={(v) => this.handleFilter(v, "areas")} />
+        </DSAGridItem>
+        </DSAGrid>
+      </DSAInfoBox>
     );
   }
 }
