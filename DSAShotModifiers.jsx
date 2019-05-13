@@ -25,7 +25,7 @@ function ShotModifier(props) {
   if(anmerkung)
     helperText += " - Anmerkung: " + anmerkung;
   return (
-    <DSAGridItem xs={12} sm={12} md={6} lg={4}>
+    <DSAGridItem xs={12} sm={12} md={6} lg={3}>
       <DSASelect
         options={menuItems}
         label={title}

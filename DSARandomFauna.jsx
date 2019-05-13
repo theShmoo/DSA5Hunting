@@ -1,32 +1,31 @@
-import React, { Component } from 'react';
-import {Button, Modal} from 'react-bootstrap';
-import {Frequencies} from './DSAFaunaData'
+import React from 'react';
+
 import DSAFauna from './DSAFauna';
 
-export default class DSARandomFauna extends Component {
+import DSADialog from '../controls/DSADialog';
+import DSAButton from '../controls/DSAButton';
+import DSAInfoBox from '../controls/DSAInfoBox';
 
-  constructor(props, context) {
-    super(props, context);
+import {Frequencies} from '../data/DSAFaunaData'
 
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
 
-    this.state = {
-      show: false,
-      fauna: {}
-    };
-  }
+class DSARandomFauna extends React.Component {
 
-  handleClose() {
-    this.setState({ show: false });
-  }
+  state = {
+    open: false,
+    fauna: {}
+  };
 
-  handleShow() {
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
+  handleShow = () => {
     this.setState({
-      show: true,
+      open: true,
       fauna: this.getRandomFauna()
     });
-  }
+  };
 
   getRandomFauna() {
     const {fauna, selection} = this.props;
@@ -67,29 +66,22 @@ export default class DSARandomFauna extends Component {
   render() {
     const {areas} = this.props.selection;
     if(areas.length !== 1)
-      return <p>Wähle eine Region um ein zufälliges Tier auswählen zu können.</p>
-    return (
-      <div>
-        <p>Klicke um ein zufälliges Tier zu erhalten.</p>
-
-        <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>
-          zufälliges Tier
-        </Button>
-
-        <Modal show={this.state.show} onHide={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Tier in {areas[0]}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <p>Dein zufällig bestimmtes Tier:</p>
-            {this.state.show ? <DSAFauna fauna={this.state.fauna}/> : "" }
-            <p>Der "Zufall" ist gewichtet nach der Häufigkeit der möglichen Tiere in der Region {areas[0]}.</p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
-    );
+      return <DSAInfoBox text="Wähle eine Region um ein zufälliges Tier auswählen zu können."/>
+    return <>
+      <DSAInfoBox text="Klicke um ein zufälliges Tier zu erhalten: ">
+        <DSAButton size="small" onClick={this.handleShow}>
+           zufälliges Tier
+        </DSAButton>
+      </DSAInfoBox>
+      <DSADialog
+        handleClose={this.handleClose}
+        open={this.state.open}
+        title={"Tier in " + areas[0]}
+        text={"Der \"Zufall\" ist gewichtet nach der Häufigkeit der möglichen Tiere in der Region " + areas[0] + "."}>
+        {this.state.open ? <DSAFauna fauna={this.state.fauna}/> : "" }
+      </DSADialog>
+      </>;
   }
 }
+
+export default DSARandomFauna;

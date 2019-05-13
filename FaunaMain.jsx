@@ -11,8 +11,8 @@ import DSAHuntingSummary from './DSAHuntingSummary';
 import DSAHuntingTypeWidget from './DSAHuntingTypeWidget';
 import DSAHuntingModifiers from './DSAHuntingModifiers';
 import DSAShotModifiers from './DSAShotModifiers';
+import DSARandomFauna from './DSARandomFauna';
 
-// import DSARandomFauna from './DSARandomFauna';
 import {Fauna,
   HuntingTypes,
   HuntingGroundNames,
@@ -136,6 +136,11 @@ class FaunaMain extends React.Component {
               selection={this.state.filter} />
         </DSAGridRow>
         <DSAGridRow>
+          <DSARandomFauna
+            fauna={filteredFauna}
+            selection={this.state.filter} />
+        </DSAGridRow>
+        <DSAGridRow>
           <DSAFaunaGrid
             fauna={filteredFauna}
             modifiers={this.state.modifiers} />
@@ -144,11 +149,6 @@ class FaunaMain extends React.Component {
     </main>);
   }
 }
-/*
-        <DSARandomFauna
-            fauna={filteredFauna}
-            selection={this.state.filter} />
-*/
 
 FaunaMain.propTypes = {
   classes: PropTypes.object.isRequired
