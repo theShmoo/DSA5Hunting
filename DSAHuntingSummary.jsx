@@ -57,7 +57,7 @@ function DSAHuntingSummary(props) {
   const lg = shot ? 3 : 4;
 
   return <DSAGrid>
-    <DSAGridItem xs={6} md={4} lg={lg}>
+    <DSAGridItem xs={12} sm={6} md={4} lg={lg}>
       <DSAMediaCard
         imagesrc="img/tierkunde.jpg"
         imagetitle="Jagd"
@@ -66,7 +66,7 @@ function DSAHuntingSummary(props) {
         <TypeModifiers huntingground={huntingground} weather={weather} />
       </DSAMediaCard>
     </DSAGridItem>
-    <DSAGridItem xs={6} md={4} lg={lg}>
+    <DSAGridItem xs={12} sm={6} md={4} lg={lg}>
       <DSAMediaCard
         imagesrc="img/wald.jpg"
         imagetitle="Qualitätsstufen"
@@ -75,7 +75,7 @@ function DSAHuntingSummary(props) {
         <DSAQSTable info={QSTierkunde} />
       </DSAMediaCard>
     </DSAGridItem>
-    <DSAGridItem xs={6} md={4} lg={lg}>
+    <DSAGridItem xs={12} sm={6} md={4} lg={lg}>
       <DSAMediaCard
         imagesrc="img/jagd.jpg"
         imagetitle="Jagd"
@@ -85,7 +85,7 @@ function DSAHuntingSummary(props) {
       </DSAMediaCard>
     </DSAGridItem>
     {shot ?
-    <DSAGridItem xs={6} md={4} lg={lg}>
+    <DSAGridItem xs={12} sm={6} md={4} lg={lg}>
       <DSAMediaCard
         imagesrc="img/fernkampf-angriff-erfolg.jpg"
         imagetitle="Schuss"

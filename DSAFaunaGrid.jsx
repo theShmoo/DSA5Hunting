@@ -19,7 +19,7 @@ class DSAFaunaGrid extends React.Component {
     const { classes, fauna } = this.props;
     const all = fauna.map((f, i) => {
       return (
-        <DSAGridItem sx={12} sm={6} md={4} lg={3} key={i}>
+        <DSAGridItem xs={12} sm={6} md={4} lg={3} key={i}>
           <DSAFauna fauna={f} />
         </DSAGridItem>);
     })
