@@ -41,7 +41,7 @@ class FaunaMain extends React.Component {
       modifiers: {
         huntingground: defaultHuntingGround,
         weather: defaultWeather,
-        weapon: defaultShot,
+        weapon: [],
         move: defaultShot,
         size: defaultShot,
         sight: defaultSight

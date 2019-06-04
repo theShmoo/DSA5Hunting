@@ -26,8 +26,7 @@ function TypeModifiers(props) {
 }
 
 function printShotModifier(modifier) {
-  let {art, fk, tp, anmerkung} = modifier;
-
+  const {art, fk, tp, anmerkung} = modifier;
   let text = art + ": FK: " + Modifier(fk) + " / TP " + Modifier(tp);
   if(anmerkung)
     text += " - Anmerkung: " + anmerkung;
@@ -36,16 +35,24 @@ function printShotModifier(modifier) {
 
 function ShotModifiers(props) {
   const {weapon, move, size, sight} = props;
+
+  const sum_weapon = {
+    fk: weapon.reduce((sum, p) => sum += p.fk, 0),
+    tp: weapon.reduce((sum, p) => sum += p.tp, 0),
+    art: weapon.length > 0 ? weapon.reduce((sum, p) => {sum.push(p.art + ""); return sum}, []) : "Keine Erschwernis",
+  };
+
   const items = [
-    {name: "Waffe", value: printShotModifier(weapon)},
+    {name: "Waffe", value: printShotModifier(sum_weapon)},
     {name: "Bewegung", value: printShotModifier(move)},
     {name: "Größe", value: printShotModifier(size)},
     {name: "Sicht", value: printShotModifier(sight)},
   ];
+
   const sum = {
     art: "Erschwernis",
-    fk: weapon.fk + move.fk + size.fk + sight.fk,
-    tp: weapon.fk + move.fk + size.fk + sight.fk,
+    fk: sum_weapon.fk + move.fk + size.fk + sight.fk,
+    tp: sum_weapon.tp + move.tp + size.tp + sight.tp,
   };
   return <DSAItemList items={[{ title: printShotModifier(sum), items: items}]} />
 }
