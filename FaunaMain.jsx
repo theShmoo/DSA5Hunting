@@ -51,7 +51,7 @@ class FaunaMain extends React.Component {
 
   onFilterChanged = (filter) => {
     this.setState(prevState => {
-      var newFilter = prevState.filter;
+      let newFilter = prevState.filter;
       for (let k in filter) {
         newFilter[k] = filter[k];
       }

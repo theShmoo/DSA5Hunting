@@ -8,10 +8,9 @@ import {HuntingGroundNames, Weather} from "../data/DSAFaunaData";
 import {Modifier} from "../utils/DSATextElements";
 
 function HuntingModifier(props) {
-  const {title, options, property, selected} = props;
+  const {title, options, property, selected, onChange} = props;
 
    const onModifiersChange = (val) => {
-    const {selected, property, options, onChange} = props;
     selected[property] = options.find( o => o.name === val.value);
     onChange(selected);
   }
